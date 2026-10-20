@@ -1,0 +1,1379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="description" content="Kadin's five-day, mobile-first placement test review with math practice, writing, and reading." />
+<title>Kadin's Placement Practice</title>
+<style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#17263b;--muted:#5b6c83;--accent:#2256a5;--pale:#e9f1ff;--stroke:#d9e3ef;--green:#116342;--greenbg:#e4f6e9;--orange:#794809;--orangebg:#fff5dd;--radius:16px;--shadow:0 3px 18px rgba(31,60,92,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;touch-action:manipulation}button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid #73a5ee;outline-offset:2px}header{background:var(--paper);border-bottom:1px solid var(--stroke);padding:15px max(18px,calc((100vw - 810px)/2));position:sticky;top:0;z-index:5}header h1{font-size:18px;letter-spacing:-.3px;margin:1px 0 0}header .eyebrow{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:1.2px;text-transform:uppercase}main{max-width:810px;margin:0 auto;padding:18px 14px 112px}.hide{display:none!important}.card{background:var(--paper);border:1px solid var(--stroke);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;margin:0 0 14px}.wide-title{font-size:26px;letter-spacing:-.7px;line-height:1.17;margin:5px 0 10px}.small-title{font-size:20px;letter-spacing:-.35px;line-height:1.25;margin:4px 0 10px}.caps{font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent)}.sub{color:var(--muted)}.fine{font-size:12px;color:var(--muted)}.progressbar{height:9px;background:#e0e8f0;overflow:hidden;border-radius:40px}.progressbar>div{background:#2462bf;height:100%;width:0%;border-radius:40px;transition:width .2s}.btn{border:0;border-radius:11px;padding:13px 15px;background:var(--accent);color:white;font-size:15px;font-weight:760;min-height:45px}.btn.ghost{background:white;border:1px solid var(--stroke);color:var(--ink)}.btn.soft{background:#e9f1ff;color:#174782}.btn:disabled{opacity:.45;cursor:not-allowed}.btnrow{display:flex;gap:9px;flex-wrap:wrap}.btnrow>*{flex:1 1 130px}.days{display:grid;grid-template-columns:1fr;gap:9px}.day{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:12px;width:100%;background:white;border:1px solid var(--stroke);border-radius:14px;padding:15px;box-shadow:var(--shadow)}.day strong{font-size:15px}.day .meta{display:block;font-size:12px;color:var(--muted);margin-top:2px}.day .arrow{font-size:23px;color:var(--accent)}.badge{display:inline-block;background:var(--pale);border-radius:8px;color:#144b90;font-size:11px;font-weight:800;padding:5px 8px}.headline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.problem{background:var(--pale);color:#152d51;border:1px solid #bcd2f4;border-radius:15px;padding:17px 13px;text-align:center;font-size:clamp(22px,5.8vw,30px);font-weight:760;letter-spacing:.1px;line-height:1.4;overflow-wrap:anywhere;white-space:pre-wrap}.step{border:1px solid var(--stroke);border-left:4px solid #4380d1;background:white;border-radius:10px;padding:11px 13px;margin:8px 0}.step .step-label{font-size:12px;font-weight:800;color:var(--muted);margin-bottom:3px}.step .step-math{font-weight:770;font-size:19px;letter-spacing:.08px;overflow-wrap:anywhere;white-space:pre-wrap}.rule{background:#f5f7fa;border:1px solid var(--stroke);border-radius:11px;padding:12px;font-size:14px;margin:12px 0}.question-label{margin:13px 0 7px;font-weight:790}.response{width:100%;background:white;border:2px solid #bfd0e8;border-radius:12px;padding:14px 12px;font-size:20px;min-height:54px;color:var(--ink)}.response:focus{border-color:#2e65c3;outline:0}.symbols{display:flex;gap:7px;overflow-x:auto;padding:10px 0 6px}.sym{border:1px solid var(--stroke);background:#f7f9fc;border-radius:9px;min-width:40px;min-height:38px;font-size:18px;font-weight:700}.answerbox{border:1px solid #b2dcbb;border-radius:12px;background:var(--greenbg);padding:13px;margin:12px 0;color:#164b30}.answerbox.pending{background:var(--orangebg);border-color:#f0d08b;color:#5d4018}.answerbox strong{display:block}.answerbox .equation{font-size:20px;margin:5px 0;font-weight:800;overflow-wrap:anywhere}.answerbox p{margin:6px 0 0;font-size:14px}.chips{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.chip{border:1px solid var(--stroke);border-radius:40px;background:white;font-size:12px;color:var(--ink);padding:8px 11px;font-weight:700}.chip.active{border-color:var(--accent);background:var(--pale);color:#174782}.section-title{font-size:22px;letter-spacing:-.5px;margin:5px 0 12px}.divider{border-top:1px solid var(--stroke);margin:17px 0}.choice{width:100%;display:block;text-align:left;background:white;color:var(--ink);border:1px solid var(--stroke);border-radius:12px;padding:13px;margin:8px 0;min-height:48px}.choice.selected{background:var(--pale);border:2px solid #5784c8}.choice.correct{background:#e2f4e8;border:2px solid #258558}.choice.wrong{background:#ffebeb;border:2px solid #bb5555}.passage{font-size:16px;line-height:1.7;white-space:pre-line;padding:14px;border-radius:12px;background:#f5f8fc;border:1px solid var(--stroke)}.field{min-height:320px;resize:vertical;width:100%;border:2px solid #bfd0e8;border-radius:12px;padding:15px;font-size:16px;line-height:1.6;color:var(--ink)}.field:focus{border-color:#2e65c3;outline:none}.count{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin:6px 0 15px}.outline-step{border-left:4px solid #6196d5;padding:7px 12px;margin:10px 0;background:#f6f9fd;border-radius:0 9px 9px 0}.outline-step strong{font-size:13px;color:#244d85}.outline-step span{display:block;font-size:14px}.check-list{display:grid;gap:10px}.check-list label{display:flex;align-items:flex-start;gap:10px;font-size:14px}.check-list input{width:20px;height:20px;flex:none;accent-color:#2058b0}.fix{display:grid;gap:6px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--stroke)}.fix .bad{color:#8d3030}.fix .good{color:var(--green)}.sticky-bottom{position:fixed;bottom:0;left:0;right:0;z-index:9;background:var(--paper);border-top:1px solid var(--stroke);display:flex;justify-content:space-evenly;padding:8px 9px max(8px,env(safe-area-inset-bottom));box-shadow:0 -2px 12px rgba(0,0,0,.04)}.navitem{background:transparent;color:#4b5f77;display:grid;justify-items:center;gap:2px;border:0;border-radius:10px;font-size:11px;font-weight:780;padding:6px 5px;min-width:68px}.navitem.active{background:#eaf2ff;color:#174b8a}.navitem svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.statgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat{background:#f5f8fc;border-radius:12px;padding:14px}.stat .big{font-size:28px;font-weight:850}.stat .fine{line-height:1.2}details{border:1px solid var(--stroke);border-radius:12px;padding:12px;margin:11px 0;background:#fff}summary{font-weight:750;cursor:pointer}details p{white-space:pre-line}.toggle-list{display:flex;gap:8px;overflow-x:auto;max-width:100%;padding:5px 0 14px}.topic{flex:none;background:#fff;color:var(--ink);padding:9px 13px;border:1px solid var(--stroke);border-radius:10px;font-size:13px;font-weight:750}.topic.active{background:var(--pale);border-color:#83a8e3;color:#164789}.links{font-size:13px;margin:6px 0;padding-left:18px}.links li{margin:8px 0}.links a{color:var(--accent);text-decoration:underline}.snackbar{font-size:13px;color:var(--muted)}
+@media(min-width:660px){.days{grid-template-columns:repeat(2,1fr)}main{padding:22px 22px 118px}.card{padding:24px}.wide-title{font-size:32px}.statgrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.progressbar>div{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">Columbus State • 5-day review</div><h1>Kadin's Placement Practice</h1></header>
+<main id="app"><div class="card">Loading study guide…</div></main>
+<nav class="sticky-bottom" aria-label="Sections">
+  <button type="button" class="navitem" data-nav="home" aria-label="Home"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z"/></svg>Home</button>
+  <button type="button" class="navitem" data-nav="math" aria-label="Math"><svg viewBox="0 0 24 24"><path d="M4 8h16M12 2v12M5 19h14M5 16v6"/></svg>Math</button>
+  <button type="button" class="navitem" data-nav="writing" aria-label="Writing"><svg viewBox="0 0 24 24"><path d="m16 4 4 4-12 12H4v-4L16 4zM14 6l4 4"/></svg>Writing</button>
+  <button type="button" class="navitem" data-nav="reading" aria-label="Reading"><svg viewBox="0 0 24 24"><path d="M12 6C9 4 6 4 3 5v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zm0 0v14"/></svg>Reading</button>
+</nav>
+<script id="content" type="application/json">{
+  "lessons": [
+    {
+      "id": 1,
+      "day": 1,
+      "title": "Order of operations",
+      "example": "6 + 3 × 4 = ?",
+      "steps": [
+        [
+          "Multiply first",
+          "3 × 4 = 12"
+        ],
+        [
+          "Put 12 back in",
+          "6 + 12"
+        ],
+        [
+          "Add",
+          "18"
+        ]
+      ],
+      "rule": "Parentheses → powers → multiply/divide left to right → add/subtract left to right.",
+      "questions": [
+        {
+          "q": "8 + 2 × 5",
+          "a": "18",
+          "steps": "2 × 5 = 10 → 8 + 10 = 18"
+        },
+        {
+          "q": "(8 + 2) × 5",
+          "a": "50",
+          "steps": "8 + 2 = 10 → 10 × 5 = 50"
+        },
+        {
+          "q": "2³ + 12 ÷ 4",
+          "a": "11",
+          "steps": "2³ = 8 and 12 ÷ 4 = 3 → 8 + 3 = 11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "title": "Add and subtract decimals",
+      "example": "4.7 + 0.35 = ?",
+      "steps": [
+        [
+          "Match the decimal points",
+          "4.70 + 0.35"
+        ],
+        [
+          "Add hundredths",
+          "0 + 5 = 5"
+        ],
+        [
+          "Add tenths",
+          "7 + 3 = 10: write 0, carry 1"
+        ],
+        [
+          "Add ones",
+          "4 + 0 + 1 = 5 → 5.05"
+        ]
+      ],
+      "rule": "You may add zeros at the end of a decimal to line up the columns.",
+      "questions": [
+        {
+          "q": "3.6 + 0.28",
+          "a": "3.88",
+          "steps": "3.60 + 0.28 = 3.88"
+        },
+        {
+          "q": "9.05 − 1.7",
+          "a": "7.35",
+          "steps": "9.05 − 1.70 = 7.35"
+        },
+        {
+          "q": "0.8 + 0.09",
+          "a": "0.89",
+          "steps": "0.80 + 0.09 = 0.89"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "day": 1,
+      "title": "Multiply and divide decimals",
+      "example": "1.2 × 0.3 = ?",
+      "steps": [
+        [
+          "Ignore decimal points for a moment",
+          "12 × 3 = 36"
+        ],
+        [
+          "Count decimal places",
+          "1 + 1 = 2 places"
+        ],
+        [
+          "Move the decimal 2 places from right",
+          "36 → 0.36"
+        ]
+      ],
+      "rule": "For division by a decimal, move the decimal in BOTH numbers until the divisor is whole. 4.8 ÷ 0.6 → 48 ÷ 6.",
+      "questions": [
+        {
+          "q": "0.4 × 0.5",
+          "a": "0.2",
+          "steps": "4 × 5 = 20 → move decimal 2 places → 0.20"
+        },
+        {
+          "q": "6.3 ÷ 0.9",
+          "a": "7",
+          "steps": "Move decimals 1 place in both: 63 ÷ 9 = 7"
+        },
+        {
+          "q": "2.5 × 1.2",
+          "a": "3",
+          "steps": "25 × 12 = 300 → 2 decimal places → 3.00 = 3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "day": 1,
+      "title": "Make fraction bottoms match",
+      "example": "1/2 = ?/4",
+      "steps": [
+        [
+          "Find how the bottom changed",
+          "4 ÷ 2 = 2"
+        ],
+        [
+          "Multiply the top by that number",
+          "1 × 2 = 2"
+        ],
+        [
+          "Multiply the bottom by that number",
+          "2 × 2 = 4"
+        ],
+        [
+          "Write your new fraction",
+          "2/4"
+        ]
+      ],
+      "rule": "Multiply or divide BOTH the top and the bottom by the same number.",
+      "questions": [
+        {
+          "q": "2/3 = ?/12",
+          "a": "8/12",
+          "steps": "12 ÷ 3 = 4 → top: 2 × 4 = 8 → 8/12"
+        },
+        {
+          "q": "Simplify 9/12",
+          "a": "3/4",
+          "steps": "Both 9 and 12 divide by 3 → 3/4"
+        },
+        {
+          "q": "4/5 = ?/20",
+          "a": "16/20",
+          "steps": "20 ÷ 5 = 4 → top: 4 × 4 = 16 → 16/20"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "day": 1,
+      "title": "Add and subtract fractions",
+      "example": "1/2 + 1/4 = ?",
+      "steps": [
+        [
+          "Pick a bottom number both fractions can use",
+          "4"
+        ],
+        [
+          "Change the first fraction",
+          "4 ÷ 2 = 2 → 1 × 2 = 2 → 2/4"
+        ],
+        [
+          "Add the TOP numbers",
+          "2 + 1 = 3"
+        ],
+        [
+          "Keep the shared bottom number",
+          "3/4"
+        ]
+      ],
+      "rule": "Get matching bottom numbers before adding or subtracting the top numbers.",
+      "questions": [
+        {
+          "q": "1/3 + 1/6",
+          "a": "1/2",
+          "steps": "1/3 = 2/6 → 2/6 + 1/6 = 3/6 → 1/2"
+        },
+        {
+          "q": "3/4 − 1/2",
+          "a": "1/4",
+          "steps": "1/2 = 2/4 → 3/4 − 2/4 = 1/4"
+        },
+        {
+          "q": "2/5 + 1/10",
+          "a": "1/2",
+          "steps": "2/5 = 4/10 → 4/10 + 1/10 = 5/10 → 1/2"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "day": 1,
+      "title": "Multiply and divide fractions",
+      "example": "2/3 × 3/4 = ?",
+      "steps": [
+        [
+          "Multiply the top numbers",
+          "2 × 3 = 6"
+        ],
+        [
+          "Multiply the bottom numbers",
+          "3 × 4 = 12"
+        ],
+        [
+          "Simplify: divide top and bottom by 6",
+          "6/12 = 1/2"
+        ]
+      ],
+      "rule": "For fraction division: flip the SECOND fraction and change ÷ into ×.",
+      "questions": [
+        {
+          "q": "1/2 × 2/5",
+          "a": "1/5",
+          "steps": "2/10 → divide top and bottom by 2 → 1/5"
+        },
+        {
+          "q": "3/5 ÷ 3/10",
+          "a": "2",
+          "steps": "Flip 3/10 → 10/3; then 3/5 × 10/3 = 30/15 = 2"
+        },
+        {
+          "q": "2/3 × 9/10",
+          "a": "3/5",
+          "steps": "18/30 → divide top and bottom by 6 → 3/5"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "day": 1,
+      "title": "Percentages",
+      "example": "25% of 80 = ?",
+      "steps": [
+        [
+          "Divide percentage by 100",
+          "25 ÷ 100 = 0.25"
+        ],
+        [
+          "Multiply by the number",
+          "0.25 × 80 = 20"
+        ]
+      ],
+      "rule": "To find a discount price: find the discount amount first, then subtract it from the original price.",
+      "questions": [
+        {
+          "q": "15% of 200",
+          "a": "30",
+          "steps": "15 ÷ 100 = 0.15 → 0.15 × 200 = 30"
+        },
+        {
+          "q": "12 is what % of 48?",
+          "a": "25%",
+          "steps": "12 ÷ 48 = 0.25 → 0.25 × 100 = 25%"
+        },
+        {
+          "q": "40% off $90: final price?",
+          "a": "54",
+          "steps": "0.40 × 90 = 36 → 90 − 36 = 54"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "day": 2,
+      "title": "Positive and negative numbers",
+      "example": "−4 + 9 = ?",
+      "steps": [
+        [
+          "The signs differ: subtract the smaller size from larger",
+          "9 − 4 = 5"
+        ],
+        [
+          "Use the sign of the number with larger size",
+          "9 is positive → +5"
+        ]
+      ],
+      "rule": "Multiply/divide: matching signs = positive; different signs = negative.",
+      "questions": [
+        {
+          "q": "−8 + 3",
+          "a": "-5",
+          "steps": "8 − 3 = 5; 8 was negative → −5"
+        },
+        {
+          "q": "−2 − 7",
+          "a": "-9",
+          "steps": "Start at −2, subtract 7 more → −9"
+        },
+        {
+          "q": "(−3) × 5",
+          "a": "-15",
+          "steps": "Different signs give negative → 3 × 5 = 15 → −15"
+        },
+        {
+          "q": "(−24) ÷ (−6)",
+          "a": "4",
+          "steps": "Matching negative signs give positive → 24 ÷ 6 = 4"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "day": 2,
+      "title": "Ratios and proportions",
+      "example": "x/5 = 12/20",
+      "steps": [
+        [
+          "Cross-multiply",
+          "20 × x = 5 × 12"
+        ],
+        [
+          "Multiply the numbers",
+          "20x = 60"
+        ],
+        [
+          "Divide both sides by 20",
+          "x = 3"
+        ]
+      ],
+      "rule": "When two fractions are equal, cross-multiply (top left × bottom right and top right × bottom left).",
+      "questions": [
+        {
+          "q": "x/4 = 9/12: find x",
+          "a": "3",
+          "steps": "12x = 4 × 9 = 36 → x = 36 ÷ 12 = 3"
+        },
+        {
+          "q": "6/8 = x/20: find x",
+          "a": "15",
+          "steps": "8x = 6 × 20 = 120 → x = 15"
+        },
+        {
+          "q": "5 items cost $15. Cost of 3?",
+          "a": "9",
+          "steps": "15 ÷ 5 = 3 each → 3 × 3 = 9"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "day": 2,
+      "title": "Distribute and combine like terms",
+      "example": "3x + 2(2x − 1)",
+      "steps": [
+        [
+          "Multiply 2 by every term inside the parentheses",
+          "2 × 2x = 4x; 2 × −1 = −2"
+        ],
+        [
+          "Rewrite without parentheses",
+          "3x + 4x − 2"
+        ],
+        [
+          "Combine the x terms",
+          "7x − 2"
+        ]
+      ],
+      "rule": "Combine x terms with x terms; combine plain numbers with plain numbers.",
+      "questions": [
+        {
+          "q": "4x + 7x − 3",
+          "a": "11x − 3",
+          "steps": "4x + 7x = 11x → 11x − 3"
+        },
+        {
+          "q": "3(x + 5)",
+          "a": "3x + 15",
+          "steps": "3 × x = 3x and 3 × 5 = 15"
+        },
+        {
+          "q": "4x + 2x − 6 + 1",
+          "a": "6x − 5",
+          "steps": "4x + 2x = 6x; −6 + 1 = −5"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "day": 2,
+      "title": "Solve two-step equations",
+      "example": "3x − 5 = 16",
+      "steps": [
+        [
+          "Undo −5: add 5 to BOTH sides",
+          "3x = 21"
+        ],
+        [
+          "Undo ×3: divide BOTH sides by 3",
+          "x = 7"
+        ],
+        [
+          "Check by replacing x with 7",
+          "3 × 7 − 5 = 16"
+        ]
+      ],
+      "rule": "To solve, undo adding/subtracting first, then multiplication/division.",
+      "questions": [
+        {
+          "q": "4x + 6 = 22",
+          "a": "4",
+          "steps": "4x = 22 − 6 = 16 → x = 16 ÷ 4 = 4"
+        },
+        {
+          "q": "x/3 + 5 = 9",
+          "a": "12",
+          "steps": "x/3 = 4 → x = 4 × 3 = 12"
+        },
+        {
+          "q": "5x − 7 = 18",
+          "a": "5",
+          "steps": "5x = 18 + 7 = 25 → x = 25 ÷ 5 = 5"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "day": 2,
+      "title": "Equations with x on both sides",
+      "example": "5x − 4 = 2x + 11",
+      "steps": [
+        [
+          "Subtract 2x from BOTH sides",
+          "3x − 4 = 11"
+        ],
+        [
+          "Add 4 to BOTH sides",
+          "3x = 15"
+        ],
+        [
+          "Divide BOTH sides by 3",
+          "x = 5"
+        ]
+      ],
+      "rule": "Do the same operation to BOTH sides each time.",
+      "questions": [
+        {
+          "q": "6x + 1 = 2x + 17",
+          "a": "4",
+          "steps": "Subtract 2x, then 1 → 4x = 16 → x = 4"
+        },
+        {
+          "q": "8x − 6 = 5x + 9",
+          "a": "5",
+          "steps": "Subtract 5x, add 6 → 3x = 15 → x = 5"
+        },
+        {
+          "q": "3(x + 2) = 18",
+          "a": "4",
+          "steps": "3x + 6 = 18 → 3x = 12 → x = 4"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "day": 2,
+      "title": "Inequalities",
+      "example": "−2x > 10",
+      "steps": [
+        [
+          "Divide BOTH sides by −2",
+          "x ? −5"
+        ],
+        [
+          "Because you divided by a negative, flip > to <",
+          "x < −5"
+        ]
+      ],
+      "rule": "Flip the inequality sign ONLY when multiplying or dividing by a negative number.",
+      "questions": [
+        {
+          "q": "3x + 2 < 11",
+          "a": "x < 3",
+          "steps": "Subtract 2 → 3x < 9 → divide by 3 → x < 3"
+        },
+        {
+          "q": "−4x ≤ 20",
+          "a": "x ≥ −5",
+          "steps": "Divide by −4 → flip ≤ to ≥ → x ≥ −5"
+        },
+        {
+          "q": "x − 7 ≥ 2",
+          "a": "x ≥ 9",
+          "steps": "Add 7 to both sides → x ≥ 9"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "day": 2,
+      "title": "Turn words into equations",
+      "example": "Twice a number plus 5 is 17",
+      "steps": [
+        [
+          "Write x for an unknown number",
+          "x"
+        ],
+        [
+          "Twice means 2 times",
+          "2x"
+        ],
+        [
+          "Add 5; \"is\" means equals",
+          "2x + 5 = 17"
+        ],
+        [
+          "Solve",
+          "2x = 12 → x = 6"
+        ]
+      ],
+      "rule": "\"Is\" means =; \"times\" means ×; \"more\" means +; \"less\" generally means −.",
+      "questions": [
+        {
+          "q": "3 more than a number is 13: find number",
+          "a": "10",
+          "steps": "x + 3 = 13 → x = 10"
+        },
+        {
+          "q": "4 times a number is 28: find number",
+          "a": "7",
+          "steps": "4x = 28 → x = 7"
+        },
+        {
+          "q": "2 times a number minus 6 is 10: find number",
+          "a": "8",
+          "steps": "2x − 6 = 10 → 2x = 16 → x = 8"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "day": 3,
+      "title": "Area and perimeter",
+      "example": "Rectangle: length 7, width 4",
+      "steps": [
+        [
+          "For area: length × width",
+          "7 × 4 = 28 square units"
+        ],
+        [
+          "For perimeter: add all four sides",
+          "7 + 4 + 7 + 4 = 22 units"
+        ],
+        [
+          "Triangle area: base × height ÷ 2",
+          "Base 8, height 5 → 8 × 5 ÷ 2 = 20"
+        ]
+      ],
+      "rule": "Rectangle area = length × width. Rectangle perimeter = 2 × length + 2 × width. Triangle area = base × height ÷ 2.",
+      "questions": [
+        {
+          "q": "Rectangle area: 9 by 3",
+          "a": "27",
+          "steps": "9 × 3 = 27 square units"
+        },
+        {
+          "q": "Triangle area: base 10, height 6",
+          "a": "30",
+          "steps": "10 × 6 ÷ 2 = 30 square units"
+        },
+        {
+          "q": "Rectangle perimeter: 5 by 8",
+          "a": "26",
+          "steps": "5 + 8 + 5 + 8 = 26 units"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "day": 3,
+      "title": "Triangle and straight-line angles",
+      "example": "Triangle angles: 50°, 60°, ?",
+      "steps": [
+        [
+          "Add the two given angles",
+          "50 + 60 = 110"
+        ],
+        [
+          "Subtract from 180",
+          "180 − 110 = 70°"
+        ]
+      ],
+      "rule": "All triangle angles add to 180°. Two angles on a straight line add to 180°.",
+      "questions": [
+        {
+          "q": "Triangle: 90°, 35°, ?",
+          "a": "55",
+          "steps": "180 − 90 − 35 = 55°"
+        },
+        {
+          "q": "Straight line: 110°, ?",
+          "a": "70",
+          "steps": "180 − 110 = 70°"
+        },
+        {
+          "q": "Triangle: 40°, 65°, ?",
+          "a": "75",
+          "steps": "180 − 40 − 65 = 75°"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "day": 3,
+      "title": "Find slope between two points",
+      "example": "Points (1, 2) and (3, 8)",
+      "steps": [
+        [
+          "Subtract y-values: second minus first",
+          "8 − 2 = 6"
+        ],
+        [
+          "Subtract x-values: second minus first",
+          "3 − 1 = 2"
+        ],
+        [
+          "Divide",
+          "6 ÷ 2 = 3"
+        ]
+      ],
+      "rule": "Slope = (second y − first y) ÷ (second x − first x).",
+      "questions": [
+        {
+          "q": "Slope: (0, 1) and (2, 5)",
+          "a": "2",
+          "steps": "(5 − 1) ÷ (2 − 0) = 4 ÷ 2 = 2"
+        },
+        {
+          "q": "Slope: (1, 4) and (4, 10)",
+          "a": "2",
+          "steps": "(10 − 4) ÷ (4 − 1) = 6 ÷ 3 = 2"
+        },
+        {
+          "q": "Slope: (2, 7) and (5, 1)",
+          "a": "-2",
+          "steps": "(1 − 7) ÷ (5 − 2) = −6 ÷ 3 = −2"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "day": 3,
+      "title": "Lines: y = mx + b",
+      "example": "y = 2x + 3",
+      "steps": [
+        [
+          "m means slope",
+          "m = 2"
+        ],
+        [
+          "b means where line crosses vertical y-axis",
+          "b = 3 → (0, 3)"
+        ],
+        [
+          "Set x to 1 and solve y",
+          "2 × 1 + 3 = 5 → (1, 5)"
+        ]
+      ],
+      "rule": "In y = mx + b, m is the slope and b is the starting y-value.",
+      "questions": [
+        {
+          "q": "y = −x + 4; find y if x = 2",
+          "a": "2",
+          "steps": "y = −2 + 4 = 2"
+        },
+        {
+          "q": "y = 3x − 2; find y if x = 3",
+          "a": "7",
+          "steps": "y = 9 − 2 = 7"
+        },
+        {
+          "q": "y = 2x + 1; what is b?",
+          "a": "1",
+          "steps": "b = 1: it is the plain number at the end"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "day": 3,
+      "title": "Functions: replace x with a number",
+      "example": "f(x) = 3x − 1; find f(4)",
+      "steps": [
+        [
+          "Replace every x with 4",
+          "f(4) = 3(4) − 1"
+        ],
+        [
+          "Multiply",
+          "12 − 1"
+        ],
+        [
+          "Subtract",
+          "f(4) = 11"
+        ]
+      ],
+      "rule": "f(4) means calculate the function when x = 4.",
+      "questions": [
+        {
+          "q": "f(x) = 2x + 5; find f(3)",
+          "a": "11",
+          "steps": "2 × 3 + 5 = 6 + 5 = 11"
+        },
+        {
+          "q": "h(x) = x² − 4; find h(5)",
+          "a": "21",
+          "steps": "5² − 4 = 25 − 4 = 21"
+        },
+        {
+          "q": "f(x) = −3x + 2; find f(−2)",
+          "a": "8",
+          "steps": "−3 × −2 + 2 = 6 + 2 = 8"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "day": 3,
+      "title": "Two equations together",
+      "example": "x + y = 9   AND   x − y = 3",
+      "steps": [
+        [
+          "Add the two equations; y cancels",
+          "2x + 0y = 12"
+        ],
+        [
+          "Divide by 2",
+          "x = 6"
+        ],
+        [
+          "Put 6 into first equation",
+          "6 + y = 9"
+        ],
+        [
+          "Solve",
+          "y = 3"
+        ]
+      ],
+      "rule": "Add or subtract the full equations to remove one letter. Then solve for the other.",
+      "questions": [
+        {
+          "q": "x + y = 10 and x − y = 2",
+          "a": "x=6, y=4",
+          "steps": "Add: 2x = 12 → x = 6 → y = 4"
+        },
+        {
+          "q": "2x + y = 9 and x + y = 6",
+          "a": "x=3, y=3",
+          "steps": "Subtract equations: x = 3 → 3 + y = 6 → y = 3"
+        },
+        {
+          "q": "x + y = 7 and 2x + y = 11",
+          "a": "x=4, y=3",
+          "steps": "Subtract equations: x = 4 → 4 + y = 7 → y = 3"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "day": 3,
+      "title": "Square roots and right triangles",
+      "example": "Right triangle legs: 3 and 4",
+      "steps": [
+        [
+          "Square each short side",
+          "3² = 9; 4² = 16"
+        ],
+        [
+          "Add",
+          "9 + 16 = 25"
+        ],
+        [
+          "Take the square root",
+          "√25 = 5: long side"
+        ]
+      ],
+      "rule": "Long side² = short side² + other short side². If the long side is given, subtract to find missing short side².",
+      "questions": [
+        {
+          "q": "√81",
+          "a": "9",
+          "steps": "9 × 9 = 81 → √81 = 9"
+        },
+        {
+          "q": "Right triangle legs 8 and 15: long side?",
+          "a": "17",
+          "steps": "8² + 15² = 64 + 225 = 289 → √289 = 17"
+        },
+        {
+          "q": "Right triangle long side 13, leg 5: other leg?",
+          "a": "12",
+          "steps": "13² − 5² = 169 − 25 = 144 → √144 = 12"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "day": 4,
+      "title": "Exponent rules",
+      "example": "x² × x³ = ?",
+      "steps": [
+        [
+          "Same letter and multiplied: add powers",
+          "2 + 3 = 5"
+        ],
+        [
+          "Write the answer",
+          "x⁵"
+        ],
+        [
+          "Same letter divided: subtract powers",
+          "x⁷ ÷ x² = x⁵"
+        ],
+        [
+          "Power on another power: multiply powers",
+          "(x²)³ = x⁶"
+        ]
+      ],
+      "rule": "Multiplying same bases → add powers. Dividing same bases → subtract powers. Power to a power → multiply powers.",
+      "questions": [
+        {
+          "q": "x³ × x⁴",
+          "a": "x^7",
+          "steps": "3 + 4 = 7 → x⁷"
+        },
+        {
+          "q": "x⁶ ÷ x²",
+          "a": "x^4",
+          "steps": "6 − 2 = 4 → x⁴"
+        },
+        {
+          "q": "(y³)²",
+          "a": "y^6",
+          "steps": "3 × 2 = 6 → y⁶"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "day": 4,
+      "title": "Scientific notation",
+      "example": "450,000 = ? × 10ⁿ",
+      "steps": [
+        [
+          "Move decimal until number starts with 1–9",
+          "450,000 → 4.5"
+        ],
+        [
+          "Count decimal moves",
+          "5 places left"
+        ],
+        [
+          "Moved left means positive exponent",
+          "4.5 × 10⁵"
+        ]
+      ],
+      "rule": "For small decimals, moving the decimal right gives a negative power of 10.",
+      "questions": [
+        {
+          "q": "63,000 in scientific notation",
+          "a": "6.3×10^4",
+          "steps": "63,000 → 6.3: 4 moves left → 6.3 × 10⁴"
+        },
+        {
+          "q": "0.00047 in scientific notation",
+          "a": "4.7×10^-4",
+          "steps": "0.00047 → 4.7: 4 moves right → 4.7 × 10⁻⁴"
+        },
+        {
+          "q": "2.1 × 10³ as a regular number",
+          "a": "2100",
+          "steps": "Move decimal 3 places right → 2,100"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "day": 4,
+      "title": "Multiply two parentheses",
+      "example": "(x + 2)(x + 3)",
+      "steps": [
+        [
+          "Multiply first x by BOTH terms",
+          "x × x = x²; x × 3 = 3x"
+        ],
+        [
+          "Multiply 2 by BOTH terms",
+          "2 × x = 2x; 2 × 3 = 6"
+        ],
+        [
+          "Combine middle terms",
+          "x² + 3x + 2x + 6 = x² + 5x + 6"
+        ]
+      ],
+      "rule": "Do all four multiplications before combining like terms.",
+      "questions": [
+        {
+          "q": "(x + 4)(x + 1)",
+          "a": "x^2+5x+4",
+          "steps": "x² + x + 4x + 4 → x² + 5x + 4"
+        },
+        {
+          "q": "(x − 2)(x + 5)",
+          "a": "x^2+3x-10",
+          "steps": "x² + 5x − 2x − 10 → x² + 3x − 10"
+        },
+        {
+          "q": "(x + 3)²",
+          "a": "x^2+6x+9",
+          "steps": "(x + 3)(x + 3) → x² + 3x + 3x + 9 → x² + 6x + 9"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "day": 4,
+      "title": "Factor a quadratic expression",
+      "example": "x² + 5x + 6",
+      "steps": [
+        [
+          "Find two numbers that multiply to 6",
+          "1 × 6 or 2 × 3"
+        ],
+        [
+          "Find which pair adds to 5",
+          "2 + 3 = 5"
+        ],
+        [
+          "Write them inside parentheses",
+          "(x + 2)(x + 3)"
+        ]
+      ],
+      "rule": "For x² + bx + c, find two numbers that multiply to c and add to b.",
+      "questions": [
+        {
+          "q": "Factor x² + 7x + 12",
+          "a": "(x+3)(x+4)",
+          "steps": "3 × 4 = 12; 3 + 4 = 7 → (x + 3)(x + 4)"
+        },
+        {
+          "q": "Factor x² − 5x + 6",
+          "a": "(x-2)(x-3)",
+          "steps": "−2 × −3 = 6; −2 + −3 = −5 → (x − 2)(x − 3)"
+        },
+        {
+          "q": "Factor x² + x − 12",
+          "a": "(x+4)(x-3)",
+          "steps": "4 × −3 = −12; 4 + −3 = 1 → (x + 4)(x − 3)"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "day": 4,
+      "title": "Solve a quadratic",
+      "example": "x² − 5x + 6 = 0",
+      "steps": [
+        [
+          "Find two numbers: multiply to +6, add to −5",
+          "−2 and −3"
+        ],
+        [
+          "Factor",
+          "(x − 2)(x − 3) = 0"
+        ],
+        [
+          "Set each parenthesis equal to 0",
+          "x − 2 = 0 OR x − 3 = 0"
+        ],
+        [
+          "Solve both",
+          "x = 2 OR x = 3"
+        ]
+      ],
+      "rule": "Make the right side 0 before factoring. Set each factor equal to zero.",
+      "questions": [
+        {
+          "q": "Solve x² − 9 = 0",
+          "a": "x=-3, x=3",
+          "steps": "(x − 3)(x + 3) = 0 → x = 3 OR x = −3"
+        },
+        {
+          "q": "Solve x² + 7x + 10 = 0",
+          "a": "x=-5, x=-2",
+          "steps": "(x + 5)(x + 2) = 0 → x = −5 OR x = −2"
+        },
+        {
+          "q": "Solve x² − 4x = 0",
+          "a": "x=0, x=4",
+          "steps": "x(x − 4) = 0 → x = 0 OR x = 4"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "day": 4,
+      "title": "Simplify square roots",
+      "example": "√50 = ?",
+      "steps": [
+        [
+          "Find largest square number dividing 50",
+          "25 × 2 = 50"
+        ],
+        [
+          "Split the square root",
+          "√25 × √2"
+        ],
+        [
+          "Calculate the perfect square root",
+          "5√2"
+        ]
+      ],
+      "rule": "Look for squares 4, 9, 16, 25, 36, 49, 64, 81, 100 inside the number.",
+      "questions": [
+        {
+          "q": "Simplify √18",
+          "a": "3√2",
+          "steps": "18 = 9 × 2 → √9 × √2 = 3√2"
+        },
+        {
+          "q": "Simplify √32",
+          "a": "4√2",
+          "steps": "32 = 16 × 2 → √16 × √2 = 4√2"
+        },
+        {
+          "q": "Simplify √75",
+          "a": "5√3",
+          "steps": "75 = 25 × 3 → √25 × √3 = 5√3"
+        }
+      ]
+    }
+  ],
+  "mixed": [
+    {
+      "q": "2/3 + 1/6",
+      "a": "5/6",
+      "steps": "2/3 = 4/6 → 4/6 + 1/6 = 5/6"
+    },
+    {
+      "q": "4.8 ÷ 0.6",
+      "a": "8",
+      "steps": "48 ÷ 6 = 8"
+    },
+    {
+      "q": "18% of 150",
+      "a": "27",
+      "steps": "0.18 × 150 = 27"
+    },
+    {
+      "q": "5 + 4 × 3",
+      "a": "17",
+      "steps": "4 × 3 = 12 → 5 + 12 = 17"
+    },
+    {
+      "q": "−7 + 12",
+      "a": "5",
+      "steps": "12 − 7 = 5"
+    },
+    {
+      "q": "3/4 × 2/3",
+      "a": "1/2",
+      "steps": "6/12 = 1/2"
+    },
+    {
+      "q": "x/6 = 4/8: find x",
+      "a": "3",
+      "steps": "8x = 24 → x = 3"
+    },
+    {
+      "q": "5x − 8 = 17: find x",
+      "a": "5",
+      "steps": "5x = 25 → x = 5"
+    },
+    {
+      "q": "Simplify 2(3x + 1) − x",
+      "a": "5x+2",
+      "steps": "6x + 2 − x = 5x + 2"
+    },
+    {
+      "q": "4x + 1 = 2x + 11: find x",
+      "a": "5",
+      "steps": "2x = 10 → x = 5"
+    },
+    {
+      "q": "−3x > 15",
+      "a": "x < -5",
+      "steps": "Divide by −3; FLIP the sign → x < −5"
+    },
+    {
+      "q": "Area of rectangle 12 by 5",
+      "a": "60",
+      "steps": "12 × 5 = 60"
+    },
+    {
+      "q": "Triangle angles 45°, 65°, ?",
+      "a": "70",
+      "steps": "180 − 45 − 65 = 70°"
+    },
+    {
+      "q": "Slope: (1, 3) and (4, 9)",
+      "a": "2",
+      "steps": "(9 − 3) ÷ (4 − 1) = 6 ÷ 3 = 2"
+    },
+    {
+      "q": "f(x) = 2x² − 1; find f(3)",
+      "a": "17",
+      "steps": "2(3²) − 1 = 2 × 9 − 1 = 17"
+    },
+    {
+      "q": "y = 2x − 5; find y if x = 4",
+      "a": "3",
+      "steps": "2 × 4 − 5 = 3"
+    },
+    {
+      "q": "x + y = 8; x − y = 2",
+      "a": "x=5, y=3",
+      "steps": "Add equations: 2x = 10 → x = 5 → y = 3"
+    },
+    {
+      "q": "√144",
+      "a": "12",
+      "steps": "12 × 12 = 144"
+    },
+    {
+      "q": "x⁴ × x³",
+      "a": "x^7",
+      "steps": "4 + 3 = 7 → x⁷"
+    },
+    {
+      "q": "(x + 1)(x + 4)",
+      "a": "x^2+5x+4",
+      "steps": "x² + 4x + x + 4 = x² + 5x + 4"
+    },
+    {
+      "q": "Factor x² + 9x + 20",
+      "a": "(x+4)(x+5)",
+      "steps": "4 × 5 = 20; 4 + 5 = 9"
+    },
+    {
+      "q": "Solve x² − 4x + 3 = 0",
+      "a": "x=1, x=3",
+      "steps": "(x − 1)(x − 3) = 0 → x = 1 OR 3"
+    },
+    {
+      "q": "0.0056 in scientific notation",
+      "a": "5.6×10^-3",
+      "steps": "0.0056 → 5.6: 3 moves right → exponent −3"
+    },
+    {
+      "q": "Simplify √48",
+      "a": "4√3",
+      "steps": "48 = 16 × 3 → √16 × √3 = 4√3"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Library lending",
+      "passage": "Many libraries now lend more than books. Some allow patrons to borrow tools, musical instruments, and wireless internet devices. Supporters say these programs make expensive items available to people who need them only occasionally. However, libraries must inspect and maintain the items, which adds costs and staff work. Before expanding such programs, library leaders often examine which items local residents request most often.",
+      "q": [
+        [
+          "What is the main idea?",
+          [
+            "Libraries are lending only books.",
+            "Libraries lend additional items, but the programs require planning.",
+            "Libraries no longer need workers.",
+            "Libraries must stop lending instruments."
+          ],
+          1,
+          "The passage mentions new lending programs and the planning they require."
+        ],
+        [
+          "Why do supporters value the programs?",
+          [
+            "They permanently give away costly equipment.",
+            "They eliminate maintenance work.",
+            "They offer temporary access to expensive items.",
+            "They replace every other library service."
+          ],
+          2,
+          "People can borrow expensive items instead of buying them."
+        ],
+        [
+          "“Patrons” most nearly means…",
+          [
+            "Library users",
+            "Library managers",
+            "Local stores",
+            "Elected officials"
+          ],
+          0,
+          "The people borrowing items are the library users."
+        ],
+        [
+          "How might a library select new items?",
+          [
+            "Ignore what residents want.",
+            "Only lend items that are free.",
+            "Ask which items residents need.",
+            "Pick the oldest available item."
+          ],
+          2,
+          "The final sentence says leaders consider residents’ requests."
+        ]
+      ]
+    },
+    {
+      "title": "Streetlight upgrades",
+      "passage": "A city installed energy-saving streetlights on several roads. Officials expected the new lights to lower electric bills. After six months, electricity use had dropped, but maintenance costs were temporarily higher because crews had to replace old wiring in some locations. The city planned to study the total costs over a longer period before deciding whether to replace all remaining streetlights.",
+      "q": [
+        [
+          "What happened to electricity use?",
+          [
+            "It rose.",
+            "It was unchanged.",
+            "It dropped.",
+            "The city did not measure it."
+          ],
+          2,
+          "The passage directly says electricity use had dropped."
+        ],
+        [
+          "What temporarily raised costs?",
+          [
+            "Old wiring needed replacement.",
+            "Streetlights used more electricity.",
+            "The city hired new teachers.",
+            "Residents purchased the lights."
+          ],
+          0,
+          "Crews needed to replace old wiring in some places."
+        ],
+        [
+          "Why did the city wait before replacing more lights?",
+          [
+            "It learned the lights did not work.",
+            "It wanted long-term cost information.",
+            "It had finished every road.",
+            "It planned to increase electric bills."
+          ],
+          1,
+          "The city planned to study costs over a longer period."
+        ],
+        [
+          "Which statement best fits the passage?",
+          [
+            "All streetlights had already been replaced.",
+            "No money was saved on electricity.",
+            "Energy use fell, but total costs still needed study.",
+            "All new lights failed after six months."
+          ],
+          2,
+          "Electricity went down but maintenance and total costs were still being evaluated."
+        ]
+      ]
+    }
+  ],
+  "essays": [
+    "Should colleges offer students the choice to take most classes online or in person? Explain your position and support it with specific examples.",
+    "Should high schools require a personal finance class before graduation? Agree or disagree. Give reasons and examples."
+  ],
+  "sources": [
+    [
+      "Columbus State math placement",
+      "https://www.cscc.edu/admissions/placement-testing/math-placement.shtml"
+    ],
+    [
+      "Columbus State writing placement",
+      "https://www.cscc.edu/admissions/placement-testing/writing-placement.shtml"
+    ],
+    [
+      "Columbus State reading placement",
+      "https://www.cscc.edu/admissions/placement-testing/reading-placement.shtml"
+    ],
+    [
+      "Official ALEKS topic list",
+      "https://www.aleks.com/highered/ppl/ALEKS_Placement_Problem_Types.pdf"
+    ],
+    [
+      "College Board sample reading questions and essays",
+      "https://accuplacer.collegeboard.org/students/prepare-for-accuplacer/practice-download"
+    ]
+  ]
+}</script>
+<script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('content').textContent);
+const STORAGE='kadin_placement_v1';
+const app=document.getElementById('app');
+let state={answers:{},completed:{},revealed:{},reading:{},essays:['',''],checks:{}};
+try{let saved=JSON.parse(localStorage.getItem(STORAGE)||'null');if(saved&&typeof saved==='object'){state={...state,...saved};}}catch(e){}
+const view={tab:'home',lesson:0,problem:0,mixed:0,readingPassage:0,readingQuestion:0,essay:0,showSteps:false,notice:''};
+const elsafe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escAttr=elsafe;
+function save(){try{localStorage.setItem(STORAGE,JSON.stringify(state));}catch(e){}}
+function scrolltop(){window.scrollTo({top:0,behavior:'instant'});}
+function move(tab,opts={}){view.tab=tab;Object.assign(view,opts);view.showSteps=false;render();scrolltop();}
+function dotProgress(prefix,items){const count=items.filter(q=>state.completed[prefix+q]).length;return [count,items.length];}
+function percent(a,b){return b?Math.round(a/b*100):0;}
+function totalDone(){return Object.keys(state.completed).filter(k=>k.startsWith('s')||k.startsWith('m')).length;}
+function allMathCount(){return DATA.lessons.reduce((n,l)=>n+l.questions.length,0)+DATA.mixed.length;}
+function makeBar(a,b){return `<div class="progressbar" aria-label="${a} of ${b} finished"><div style="width:${percent(a,b)}%"></div></div>`;}
+function navUpdate(){document.querySelectorAll('.navitem').forEach(b=>{const current=b.dataset.nav===(view.tab==='mixed'?'math':view.tab);b.classList.toggle('active',current);b.setAttribute('aria-current',current?'page':'false')});}
+function button(text,act,cls='btn'){return `<button type="button" class="${cls}" data-act="${act}">${elsafe(text)}</button>`;}
+function dayDone(d){if(d<5){const labs=DATA.lessons.filter(l=>l.day===d);const ids=labs.flatMap(l=>l.questions.map((_,i)=>'s'+l.id+'_'+i));return [ids.filter(id=>state.completed[id]).length,ids.length]}let ids=DATA.mixed.map((_,i)=>'m'+i);return [ids.filter(id=>state.completed[id]).length,ids.length]}
+function renderHome(){let maths=totalDone(),all=allMathCount();let readingCount=Object.keys(state.reading).length;
+let cards=Array.from({length:5},(_,i)=>{const d=i+1;const [a,b]=dayDone(d);const subs=['Decimals, fractions, percentages','Negatives, equations, ratios','Geometry, slopes, functions','Powers, factoring, roots','Mixed math • writing • reading'];return `<button class="day" data-day="${d}"><span><span class="badge">DAY ${d}</span><strong style="display:block;margin-top:7px">${['Number basics','Algebra basics','Graphs & formulas','Higher algebra','Final review'][i]}</strong><span class="meta">${subs[i]} • ${a}/${b} math answers checked</span></span><span class="arrow">›</span></button>`}).join('');
+app.innerHTML=`<section class="card"><div class="caps">Study from your phone</div><h2 class="wide-title">One problem at a time.</h2><p class="sub" style="margin-top:0">Read the steps. Type your answer. Tap <b>Check answer</b>. Your answers save automatically in this browser on this phone.</p><div class="statgrid"><div class="stat"><div class="big">${maths}/${all}</div><div class="fine">Math answers checked</div></div><div class="stat"><div class="big">${readingCount}/8</div><div class="fine">Reading questions answered</div></div></div><div style="margin:15px 0 8px">${makeBar(maths,all)}</div>${button('Continue math','continue')}<p class="fine" style="margin-bottom:0">Math is first. Writing and reading have their own tabs below.</p></section><h2 class="section-title">Choose a day</h2><div class="days">${cards}</div><section class="card" style="margin-top:16px"><strong>What this is</strong><p class="fine">82 skill practice questions, 24 mixed math questions, 8 reading questions, and two writing prompts. All practice is original and follows the published topic areas. It is <b>not</b> a copy of the actual placement test and does not predict an ALEKS score.</p><details><summary>Official test and topic sources</summary><ul class="links">${DATA.sources.map(s=>`<li><a href="${s[1]}" target="_blank" rel="noreferrer">${elsafe(s[0])}</a></li>`).join('')}</ul></details><div class="btnrow">${button('Save my answers as a file','export','btn soft')}</div></section>`;}
+function lessonIndexNav(){const day=view.tab==='mixed'?5:DATA.lessons[view.lesson].day;let lessons=DATA.lessons.filter(l=>l.day===day);return `<div class="toggle-list" aria-label="Skills for day ${day}">${lessons.map(l=>`<button class="topic ${l.id-1===view.lesson?'active':''}" data-lesson="${l.id-1}">${String(l.id).padStart(2,'0')} ${elsafe(l.title)}</button>`).join('')}</div>`}
+function questionHtml(q,id,n,total){let saved=state.answers[id]||'',done=!!state.completed[id]||!!state.revealed[id];return `<div class="caps" id="practice-start">Your turn • ${n} of ${total}</div><div class="problem" style="margin-top:8px">${elsafe(q.q)}</div><label class="question-label" for="math-input">Type your answer</label><input class="response" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" id="math-input" data-qid="${id}" value="${escAttr(saved)}" placeholder="Your answer…" /><div class="symbols" aria-label="Math character keys">${['/','x','²','³','√','−','≥','≤','%'].map(c=>`<button type="button" class="sym" data-symbol="${escAttr(c)}" aria-label="Insert ${escAttr(c)}">${elsafe(c)}</button>`).join('')}</div><div class="btnrow">${button('Check answer','check','btn')}${button('Show steps','show','btn ghost')}</div>${done?answerHtml(q,id):''}`;}
+function parseNumber(v){let s=String(v).trim().replace(/,/g,'').replace(/[$°\s]/g,'').replace(/−/g,'-');s=s.replace(/^([a-zA-Z])=/,'');if(/^[+-]?(\d+(\.\d+)?|\.\d+)%$/.test(s))return parseFloat(s)/100;if(/^[+-]?(\d+(\.\d+)?|\.\d+)\/[+-]?(\d+(\.\d+)?|\.\d+)$/.test(s)){let [a,b]=s.split('/').map(Number);return b? a/b:NaN;}if(/^[+-]?(\d+(\.\d+)?|\.\d+)$/.test(s))return Number(s);return NaN}
+const superchars={'⁰':'^0','¹':'^1','²':'^2','³':'^3','⁴':'^4','⁵':'^5','⁶':'^6','⁷':'^7','⁸':'^8','⁹':'^9','⁻':'-'};
+function norm(t){return String(t??'').toLowerCase().replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]/g,c=>superchars[c]).replace(/[−–]/g,'-').replace(/[×·]/g,'*').replace(/[÷]/g,'/').replace(/[≥]/g,'>=').replace(/[≤]/g,'<=').replace(/\s|\$/g,'').replace(/[.;]$/,'').replace(/\*/g,'').replace(/(x|y)=/g,'$1=')}
+function equivalent(given,expected){const a=parseNumber(given),b=parseNumber(expected);if(Number.isFinite(a)&&Number.isFinite(b))return Math.abs(a-b)<0.00000001;let x=norm(given),y=norm(expected);if(x===y)return true;if(y.includes('x=')&&y.includes('y=')){const pat=/(x|y)=([+\-]?\d+(?:\.\d+)?)/g;let X=[...x.matchAll(pat)].map(a=>a[1]+'='+a[2]).sort().join(',');let Y=[...y.matchAll(pat)].map(a=>a[1]+'='+a[2]).sort().join(',');if(X&&X===Y)return true}if(y.includes('x=')&&!y.includes('y=')&&x.includes('x=')){const xx=x.split(/,|or/).map(z=>z.trim()).sort().join('|');const yy=y.split(/,|or/).map(z=>z.trim()).sort().join('|');if(xx===yy)return true}return false}
+function answerHtml(q,id){const given=state.answers[id]??'',good=given&&equivalent(given,q.a);return `<div class="answerbox ${good?'':'pending'}" role="status"><strong>${good?'✓ Matches the answer':'Compare with the worked answer'}</strong><div class="equation">Answer: ${elsafe(q.a)}</div><p>${elsafe(q.steps)}</p>${!good?'<p>Algebra can be written in different ways. If yours is equivalent, count it as correct.</p>':''}</div>`;}
+function renderMath(){const l=DATA.lessons[view.lesson];const qi=Math.min(view.problem,l.questions.length-1);view.problem=qi;const q=l.questions[qi],id='s'+l.id+'_'+qi;const [completed,total]=dayDone(l.day);
+app.innerHTML=`<section class="card"><div class="headline"><span class="badge">DAY ${l.day} • MATH</span><span class="fine">${completed}/${total} checked today</span></div>${makeBar(completed,total)}<h2 class="small-title" style="margin-top:15px">Skill ${String(l.id).padStart(2,'0')}: ${elsafe(l.title)}</h2><div style="margin-bottom:7px"><button class="chip" type="button" data-act="jump">Skip to practice ↓</button></div>${lessonIndexNav()}<div class="caps">Worked example</div><div class="problem">${elsafe(l.example)}</div>${l.steps.map((s,i)=>`<div class="step"><div class="step-label">${i+1}. ${elsafe(s[0])}</div><div class="step-math">${elsafe(s[1])}</div></div>`).join('')}<div class="rule"><b>Remember:</b> ${elsafe(l.rule)}</div><div class="divider"></div>${questionHtml(q,id,qi+1,l.questions.length)}<div class="btnrow" style="margin-top:14px">${button('← Previous','prev','btn ghost')}${button(qi===l.questions.length-1?'Next skill →':'Next question →','next','btn soft')}</div></section>`}
+function renderMixed(){const qi=view.mixed,q=DATA.mixed[qi],id='m'+qi;const [a,b]=dayDone(5);
+app.innerHTML=`<section class="card"><div class="headline"><span class="badge">DAY 5 • MATH</span><span class="fine">${a}/${b} checked</span></div>${makeBar(a,b)}<h2 class="small-title" style="margin-top:17px">24-question mixed check</h2><p class="sub" style="margin:2px 0 15px">Original practice, not a scored ALEKS simulation. Try the question before checking.</p>${questionHtml(q,id,qi+1,DATA.mixed.length)}<div class="btnrow" style="margin-top:14px">${button('← Previous','mixprev','btn ghost')}${button(qi===23?'Go to writing →':'Next question →','mixnext','btn soft')}</div></section>`}
+function wordCount(v){return v.trim()?v.trim().split(/\s+/).length:0}
+const sentenceFixes=[['Sentence fragment','Because classes are expensive.','Classes can be difficult to afford because tuition is expensive.'],['Run-on','Online classes are flexible they save travel time.','Online classes are flexible, and they save travel time.'],['Subject / verb','The student have three classes.','The student has three classes.'],['Apostrophe','Students should review theyre work.','Students should review their work.'],['Too vague','It helps people a lot.','Online options help students who work evening shifts attend college.']];
+function renderWriting(){const v=state.essays[view.essay]||''; const outline=[['Introduction','State your position and name your main reasons.'],['Reason 1','State the reason. Explain it. Give one specific example.'],['Reason 2','State a different reason. Explain it. Give one specific example.'],['Reason 3 / opposing view','Give another reason OR explain and respond to the opposite view.'],['Conclusion','State your position again in new words. Summarize your reasons.']];
+app.innerHTML=`<section class="card"><span class="badge">WRITING • WRITEPLACER</span><h2 class="wide-title">Write a full essay.</h2><p class="sub">Aim for roughly 300–600 words. You can type it here or use your phone keyboard's microphone. Your draft saves automatically in this browser.</p><div class="toggle-list"><button type="button" class="topic ${view.essay===0?'active':''}" data-essay="0">Essay prompt 1</button><button type="button" class="topic ${view.essay===1?'active':''}" data-essay="1">Essay prompt 2</button></div><div class="caps">Your prompt</div><div class="problem" style="font-size:18px;text-align:left;font-weight:650">${elsafe(DATA.essays[view.essay])}</div><details><summary>Open the 5-paragraph writing map</summary>${outline.map(x=>`<div class="outline-step"><strong>${elsafe(x[0])}</strong><span>${elsafe(x[1])}</span></div>`).join('')}</details><label class="question-label" for="essay-text">Write your essay</label><textarea class="field" id="essay-text" aria-label="Essay response" placeholder="Start with your opinion about the prompt…">${elsafe(v)}</textarea><div class="count"><span id="word-count">${wordCount(v)} words</span><span id="word-goal">${wordCount(v)>=300&&wordCount(v)<=600?'Within target range':'Target: 300–600'}</span></div><div class="btnrow">${button('Save essay to a file','export','btn soft')}</div></section><section class="card"><h2 class="small-title">Check before finishing</h2><div class="check-list">${['My introduction states my position.','Each body paragraph includes an example.','Each paragraph is about one idea.','I checked periods, capitals, and sentences.','My essay is roughly 300–600 words.'].map((s,i)=>`<label><input type="checkbox" data-writing-check="${i}" ${state.checks[view.essay+'_'+i]?'checked':''}><span>${elsafe(s)}</span></label>`).join('')}</div><details><summary>Fix 5 common writing mistakes</summary>${sentenceFixes.map(([title,bad,good])=>`<div class="fix"><b>${elsafe(title)}</b><span class="bad">✕ ${elsafe(bad)}</span><span class="good">✓ ${elsafe(good)}</span></div>`).join('')}</details></section>`}
+function renderReading(){const pi=view.readingPassage,qi=view.readingQuestion,p=DATA.reading[pi],quest=p.q[qi],id='r'+pi+'_'+qi; const saved=state.reading[id]; const readCount=Object.keys(state.reading).length;
+app.innerHTML=`<section class="card"><div class="headline"><span class="badge">READING • ACCUPLACER</span><span class="fine">${readCount}/8 answered</span></div>${makeBar(readCount,8)}<h2 class="small-title" style="margin-top:16px">Passage ${pi+1}: ${elsafe(p.title)}</h2><div class="passage">${elsafe(p.passage)}</div><div class="divider"></div><div class="caps">Question ${pi*4+qi+1} of 8</div><h3 class="small-title">${elsafe(quest[0])}</h3>${quest[1].map((opt,i)=>`<button type="button" class="choice ${saved===i?'selected':''} ${saved!==undefined&&i===quest[2]?'correct':''} ${saved===i&&i!==quest[2]?'wrong':''}" data-choice="${i}" ${saved!==undefined?'disabled':''}><b>${'ABCD'[i]}.</b> ${elsafe(opt)}</button>`).join('')}${saved!==undefined?`<div class="answerbox ${saved!==quest[2]?'pending':''}" role="status"><b>${saved===quest[2]?'Correct':'Correct answer: '+ 'ABCD'[quest[2]]}</b><p>${elsafe(quest[3])}</p></div>`:''}<div class="btnrow" style="margin-top:13px">${button('← Previous','readprev','btn ghost')}${button(pi===1&&qi===3?'Back to home':'Next question →','readnext','btn soft')}</div><p class="fine">These passages are original practice, not released ACCUPLACER questions.</p></section>`}
+function render(){navUpdate();switch(view.tab){case'home':renderHome();break;case'math':renderMath();break;case'mixed':renderMixed();break;case'writing':renderWriting();break;case'reading':renderReading();break;} }
+function nextSkill(){if(view.lesson>=DATA.lessons.length-1){move('mixed',{mixed:0});return;}view.lesson++;view.problem=0;view.showSteps=false;render();scrolltop();}
+function handleAction(act){if(act==='continue'){const first=DATA.lessons.findIndex(l=>l.questions.some((_,i)=>!state.completed['s'+l.id+'_'+i]));if(first===-1){move('mixed',{mixed:0});return;}const l=DATA.lessons[first];const pos=l.questions.findIndex((_,i)=>!state.completed['s'+l.id+'_'+i]);move('math',{lesson:first,problem:pos});return}
+if(act==='jump'){document.getElementById('practice-start')?.scrollIntoView({behavior:'smooth',block:'start'});return}
+if(act==='check'||act==='show'){const q=view.tab==='mixed'?DATA.mixed[view.mixed]:DATA.lessons[view.lesson].questions[view.problem],id=view.tab==='mixed'?'m'+view.mixed:'s'+DATA.lessons[view.lesson].id+'_'+view.problem;let inp=document.getElementById('math-input');if(inp){if(act==='check'&&!inp.value.trim()){inp.focus();inp.placeholder='Type your answer first';return;}state.answers[id]=inp.value;if(act==='check')state.completed[id]=true;else state.revealed[id]=true;save();render();}return}
+if(act==='next'){const l=DATA.lessons[view.lesson];if(view.problem<l.questions.length-1){view.problem++;render();scrolltop();}else{nextSkill();}return}if(act==='prev'){if(view.problem>0){view.problem--;render();scrolltop();}else if(view.lesson>0){view.lesson--;view.problem=DATA.lessons[view.lesson].questions.length-1;render();scrolltop();}else{move('home')}return}
+if(act==='mixnext'){if(view.mixed<23){view.mixed++;render();scrolltop()}else move('writing');return}if(act==='mixprev'){if(view.mixed>0){view.mixed--;render();scrolltop()}else move('math',{lesson:26,problem:2});return}
+if(act==='readnext'){if(view.readingQuestion<3){view.readingQuestion++;render();scrolltop()}else if(view.readingPassage<1){view.readingPassage++;view.readingQuestion=0;render();scrolltop()}else move('home');return}if(act==='readprev'){if(view.readingQuestion>0){view.readingQuestion--;render();scrolltop()}else if(view.readingPassage>0){view.readingPassage--;view.readingQuestion=3;render();scrolltop()}else move('home');return}
+if(act==='export'){const lines=['KADIN — STUDY ANSWERS','Saved locally on this phone. Export generated: '+new Date().toLocaleString(),''];for(const l of DATA.lessons){lines.push('SKILL '+l.id+' — '+l.title);l.questions.forEach((q,i)=>{let id='s'+l.id+'_'+i;lines.push('  '+(i+1)+'. '+q.q+' | My answer: '+(state.answers[id]??'Not answered')+' | Example answer: '+q.a)});lines.push('')}lines.push('MIXED MATH');DATA.mixed.forEach((q,i)=>lines.push((i+1)+'. '+q.q+' | My answer: '+(state.answers['m'+i]??'Not answered')+' | Answer: '+q.a));lines.push('','READING ANSWERS');DATA.reading.forEach((p,pi)=>p.q.forEach((q,qi)=>{let n=state.reading['r'+pi+'_'+qi];lines.push(p.title+' Q'+(qi+1)+': '+(n===undefined?'Not answered':('ABCD'[n]))+' | Correct: '+('ABCD'[q[2]]))}));lines.push('','WRITING — PROMPT 1',state.essays[0]??'','', 'WRITING — PROMPT 2',state.essays[1]??'');const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download='Kadin_Study_Answers.txt';document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);return}}
+document.addEventListener('click',e=>{let nav=e.target.closest('[data-nav]');if(nav){move(nav.dataset.nav);return}let day=e.target.closest('[data-day]');if(day){const d=+day.dataset.day;if(d===5){move('mixed',{mixed:0})}else{const i=DATA.lessons.findIndex(l=>l.day===d);move('math',{lesson:i,problem:0})}return}let topic=e.target.closest('[data-lesson]');if(topic){move('math',{lesson:+topic.dataset.lesson,problem:0});return}let ebtn=e.target.closest('[data-essay]');if(ebtn){view.essay=+ebtn.dataset.essay;render();return}let sym=e.target.closest('[data-symbol]');if(sym){const field=document.getElementById('math-input');if(field){const a=field.selectionStart,b=field.selectionEnd,prev=field.value;field.value=prev.slice(0,a)+sym.dataset.symbol+prev.slice(b);field.focus();field.setSelectionRange(a+sym.dataset.symbol.length,a+sym.dataset.symbol.length);state.answers[field.dataset.qid]=field.value;save()}return}let choice=e.target.closest('[data-choice]');if(choice){const id='r'+view.readingPassage+'_'+view.readingQuestion;if(state.reading[id]===undefined){state.reading[id]=+choice.dataset.choice;save();render();}return}let action=e.target.closest('[data-act]');if(action)handleAction(action.dataset.act)});
+document.addEventListener('input',e=>{if(e.target.id==='essay-text'){state.essays[view.essay]=e.target.value;save();let count=wordCount(e.target.value);document.getElementById('word-count').textContent=count+' words';document.getElementById('word-goal').textContent=count>=300&&count<=600?'Within target range':'Target: 300–600';}else if(e.target.id==='math-input'){state.answers[e.target.dataset.qid]=e.target.value;save();}});
+document.addEventListener('change',e=>{if(e.target.dataset.writingCheck!==undefined){state.checks[view.essay+'_'+e.target.dataset.writingCheck]=e.target.checked;save()}});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.id==='math-input'){e.preventDefault();handleAction('check')}});
+render();
+</script>
+</body>
+</html>
